@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Judul Halaman</title>
 </head>
+
 <body>
     <header>
         <h1>Ini Header</h1>
@@ -23,25 +25,39 @@
         </section>
         <section id="about">
             <h2>Tentang Saya</h2>
-           <p><strong>NIM:</strong> 2522500070</p> 
-           <p><strong>Nama Lengkap:</strong> Andin Alamanda Ningtyas &#9729;</p>
-           <p><strong>Tempat Lahir:</strong> Pangkalpinang</p>
-           <p><strong>Tanggal Lahir:</strong> 22 Mei 2007</p>
-           <p><strong>Hobby:</strong> Nonton film dan mempelajari hal baru &#10052;</p>
-           <p><strong>Pasangan:</strong> Tidak ada</p>
-           <p><strong>Pekerjaan:</strong> Belum ada</p>
-           <p><strong>Nama Orang Tua:</strong> Bapak Heru Triwibowo dan Ibu Nurbaiti</p>
-           <p><strong>Nama Kakak:</strong> Isnaini, Muhamad Kholid Arroyan, Al Anshori, dan Nunung Rifka Nurfalah</p>
-           <p><strong>Nama Adek:</strong> Saya lah adeknya &#128516;</p>
-           <p>HTML digunakan untuk membuat struktur halaman web.</p>
+            <p><strong>NIM:</strong> 2522500070</p>
+            <p><strong>Nama Lengkap:</strong> Andin Alamanda Ningtyas &#9729;</p>
+            <p><strong>Tempat Lahir:</strong> Pangkalpinang</p>
+            <p><strong>Tanggal Lahir:</strong> 22 Mei 2007</p>
+            <p><strong>Hobby:</strong> Nonton film dan mempelajari hal baru &#10052;</p>
+            <p><strong>Pasangan:</strong> Tidak ada</p>
+            <p><strong>Pekerjaan:</strong> Belum ada</p>
+            <p><strong>Nama Orang Tua:</strong> Bapak Heru Triwibowo dan Ibu Nurbaiti</p>
+            <p><strong>Nama Kakak:</strong> Isnaini, Muhamad Kholid Arroyan, Al Anshori, dan Nunung Rifka Nurfalah</p>
+            <p><strong>Nama Adek:</strong> Saya lah adeknya &#128516;</p>
+            <p>HTML digunakan untuk membuat struktur halaman web.</p>
         </section>
-         <section id="contact">
+        <section id="contact">
             <h2>Kontak Saya</h2>
-            <p>HTML Form.</p>
+            <form action="" method="get">
+
+                <label for="txtNama">Nama:</label>
+                <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+
+                <label for="txtEmail"></label>
+                <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+
+                <label for="txtPesan">Pesan:</label>
+                <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+
+                <button type="submit">Kirim</button>
+                <button type="reset">Batal</button>
+            </form>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Andin Alamanda Ningtyas 2522500070</p>
     </footer>
 </body>
+
 </html>
