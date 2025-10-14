@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -62,127 +62,117 @@
 
 </html>
 
-
 <style>
-/* Styling untuk keseluruhan bagian "Tentang Saya" */
-#about {
-    /* Menambahkan padding di sekeliling konten untuk ruang bernapas */
-    padding: 20px;
-    /* Menentukan lebar maksimum agar konten tidak terlalu melebar di layar besar */
-    max-width: 600px;
-    /* Membuat kotak konten berada di tengah halaman */
-    margin: 30px auto;
-    /* Memberi sedikit bayangan untuk efek kedalaman */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sudut membulat untuk tampilan yang lebih lembut */
-    border-radius: 10px;
-    /* Warna latar belakang cerah */
-    background-color: rgb(145, 215, 145);
-    /* Menggunakan font yang mudah dibaca */
-    font-family: Arial, sans-serif;
-    /* Warna teks default */
-    color: #333;
-}
-body {
-    /* Warna latar belakang abu-abu muda untuk kontras */
-    background-color: rgb(141, 212, 141);
-    /* Margin default dihilangkan */
-    margin: 0;
-    /* Padding dihilangkan */
-    padding: 0;
-}
-/* Styling untuk judul utama */
-#about h2 {
-    /* Garis bawah untuk memisahkan judul */
-    border-bottom: 2px solid #007bff;
-    /* Padding di bawah judul */
-    padding-bottom: 10px;
-    /* Margin di bawah judul */
-    margin-bottom: 20px;
-    /* Warna judul yang menonjol */
-    color: #007bff;
-    /* Teks rata tengah */
-    text-align: center;
+
+    #about {
+    max-width: 700px;
+    margin: 30px auto; /* Pusat horizontal */
 }
 
-/* Styling untuk setiap baris paragraf */
 #about p {
-    /* Margin bawah untuk memberi ruang antar baris */
     margin-bottom: 12px;
-    /* Tinggi baris yang nyaman dibaca */
     line-height: 1.6;
-    /* Ukuran font */
     font-size: 16px;
-    /* Transisi lembut untuk efek hover */
+    padding: 5px 0;
     transition: background-color 0.3s ease;
 }
 
-/* Efek hover pada setiap baris paragraf */
 #about p:hover {
-    /* Latar belakang yang sedikit berbeda saat kursor di atasnya */
-    background-color: #f9f9f9;
-    /* Sedikit padding saat hover agar terlihat lebih baik */
-    padding-left: 5px;
-    /* Sudut membulat saat hover */
+    background-color: #f0f8ff; /* Biru muda saat hover */
+    padding-left: 10px;
+    border-left: 3px solid #007bff;
     border-radius: 3px;
 }
 
-/* Styling untuk teks yang dipertebal (misalnya "NIM", "Nama Lengkap") */
 #about p strong {
-    /* Warna yang sedikit berbeda untuk label */
     color: #0056b3;
-    /* Jarak di akhir label */
     margin-right: 5px;
-    /* Lebar tetap agar label sejajar, bisa disesuaikan */
     display: inline-block;
-    min-width: 120px;
+    min-width: 150px; /* Lebar minimum untuk meluruskan titik dua */
 }
 
-
-/* Styling untuk keseluruhan halaman web (opsional, untuk melihat efek pemusatan) */
-body {
-    background-color: #f4f4f4; /* Latar belakang abu-abu muda */
-    font-family: Arial, sans-serif;
-    display: flex; /* Menggunakan flexbox untuk penataan */
-    justify-content: center; /* Memusatkan item secara horizontal */
-    align-items: center; /* Memusatkan item secara vertikal (jika body memiliki tinggi) */
-    min-height: 100vh; /* Membuat body setidaknya setinggi viewport */
-    margin: 0;
-}
-
-/* Styling untuk tag <form> */
-form {
-    /* Batasi lebar formulir agar tidak terlalu melebar */
+/* ================================================= */
+/* 3. STYLING BAGIAN KONTAK (#contact) */
+/* ================================================= */
+#contact {
     max-width: 450px;
-    width: 90%; /* Mengambil 90% lebar layar, maksimal 450px */
-    /* Warna latar belakang formulir */
-    background-color: #ffffff;
-    /* Padding di dalam formulir */
-    padding: 30px;
-    /* Sudut membulat */
-    border-radius: 8px;
-    /* Bayangan untuk efek kedalaman */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* Mengatur tata letak agar input dan label tersusun rapi */
+    margin: 30px auto; /* Pusat horizontal */
+}
+
+form {
     display: flex;
     flex-direction: column;
 }
 
-/* Styling untuk Label */
 label {
-    /* Margin di atas label untuk pemisah */
     margin-top: 15px;
-    /* Membuat label tebal */
     font-weight: bold;
-    /* Warna label */
     color: #333;
-    /* Pastikan label sejajar */
     display: block;
-    /* Ukuran font */
     font-size: 14px;
 }
 
+/* Input Teks, Email, dan Textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Penting untuk padding */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
 
+textarea {
+    resize: vertical;
+}
+
+/* Tombol */
+form button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #28a745; /* Warna hijau untuk Kirim */
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e7e34;
+}
+
+button[type="reset"] {
+    background-color: #dc3545; /* Warna merah untuk Batal */
+    color: white;
+    margin-top: 10px;
+}
+
+button[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/* Perbaikan untuk label email yang kosong di HTML */
+label[for="txtEmail"] {
+    display: none; /* Sembunyikan label kosong ini */
+}
 </style>
-
