@@ -139,7 +139,133 @@ body {
 }
 
 
+/* Styling untuk keseluruhan halaman web (opsional, untuk melihat efek pemusatan) */
+body {
+    background-color: #f4f4f4; /* Latar belakang abu-abu muda */
+    font-family: Arial, sans-serif;
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    justify-content: center; /* Memusatkan item secara horizontal */
+    align-items: center; /* Memusatkan item secara vertikal (jika body memiliki tinggi) */
+    min-height: 100vh; /* Membuat body setidaknya setinggi viewport */
+    margin: 0;
+}
 
+/* Styling untuk tag <form> */
+form {
+    /* Batasi lebar formulir agar tidak terlalu melebar */
+    max-width: 450px;
+    width: 90%; /* Mengambil 90% lebar layar, maksimal 450px */
+    /* Warna latar belakang formulir */
+    background-color: #ffffff;
+    /* Padding di dalam formulir */
+    padding: 30px;
+    /* Sudut membulat */
+    border-radius: 8px;
+    /* Bayangan untuk efek kedalaman */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Mengatur tata letak agar input dan label tersusun rapi */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling untuk Label */
+label {
+    /* Margin di atas label untuk pemisah */
+    margin-top: 15px;
+    /* Membuat label tebal */
+    font-weight: bold;
+    /* Warna label */
+    color: #333;
+    /* Pastikan label sejajar */
+    display: block;
+    /* Ukuran font */
+    font-size: 14px;
+}
+
+/* Styling untuk Input Teks, Email, dan Textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    /* Lebar penuh di dalam form */
+    width: 100%;
+    /* Padding di dalam field */
+    padding: 10px;
+    /* Margin bawah untuk pemisah */
+    margin-bottom: 5px;
+    /* Ukuran font */
+    font-size: 16px;
+    /* Border sederhana */
+    border: 1px solid #ccc;
+    /* Sudut membulat */
+    border-radius: 4px;
+    /* Box-sizing agar padding tidak menambah lebar total */
+    box-sizing: border-box;
+    /* Transisi untuk efek fokus */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek fokus pada field input */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    /* Menghilangkan outline default */
+    outline: none;
+    /* Border biru saat fokus */
+    border-color: #007bff;
+    /* Bayangan lembut saat fokus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Styling untuk Textarea (Pesan) */
+textarea {
+    /* Mencegah perubahan ukuran secara horizontal (hanya vertikal) */
+    resize: vertical;
+}
+
+/* Container untuk tombol (agar berdampingan) */
+form button {
+    /* Styling dasar tombol */
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Mengatur lebar tombol agar penuh */
+    width: 100%;
+}
+
+/* Styling spesifik untuk tombol 'Kirim' */
+button[type="submit"] {
+    background-color: #007bff; /* Warna primer */
+    color: white;
+}
+
+/* Efek hover tombol 'Kirim' */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling spesifik untuk tombol 'Batal' */
+button[type="reset"] {
+    background-color: #6c757d; /* Warna sekunder */
+    color: white;
+    margin-top: 10px; /* Tambah jarak dari tombol Kirim */
+}
+
+/* Efek hover tombol 'Batal' */
+button[type="reset"]:hover {
+    background-color: #5a6268;
+}
+
+/* Penyesuaian untuk field email yang kehilangan label di HTML */
+/* Catatan: Sebaiknya tambahkan kembali label 'Email' di HTML untuk aksesibilitas */
+label[for="txtEmail"] {
+    margin-top: 15px; /* Tambahkan kembali margin agar konsisten */
+    display: none; /* Sembunyikan jika memang ingin input tanpa label terlihat */
+}
 
 
 </style>
