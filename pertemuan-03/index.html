@@ -175,4 +175,49 @@ button[type="reset"]:hover {
 label[for="txtEmail"] {
     display: none; /* Sembunyikan label kosong ini */
 }
+
+
+
+
+#contact {
+    max-width: 450px;
+    margin: 30px auto;
+    /* --- Tambahan untuk Gambar Latar Belakang --- */
+    background-image: url('https___s-media-cache-ak0_pinimg.com_originals_e0_5a_70_e05a70b23f36987ff395063a1e193db7.gif'); /* Ganti dengan URL/path gambar Anda */
+    background-size: cover; /* Pastikan gambar menutupi seluruh elemen */
+    background-repeat: no-repeat; /* Cegah pengulangan gambar */
+    background-position: center center; /* Posisikan gambar di tengah */
+    /* Opsional: Tambahkan lapisan semi-transparan (overlay) agar teks lebih mudah dibaca */
+    position: relative; /* Diperlukan untuk overlay */
+    padding: 30px; /* Pertahankan padding */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Pastikan gambar tidak keluar dari batas */
+}
+
+/* --- Layer Overlay (untuk membuat teks lebih jelas) --- */
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Putih semi-transparan (70% opacity) */
+    z-index: 1; /* Tempatkan di belakang konten (form) */
+    border-radius: 8px;
+}
+
+/* --- Sesuaikan Konten agar berada di atas Overlay --- */
+#contact > * {
+    position: relative; /* Pastikan semua elemen anak (#contact h2, form) di atas overlay */
+    z-index: 2;
+}
+
+/* --- Sesuaikan Warna Teks untuk Kontras yang Lebih Baik --- */
+#contact h2,
+#contact label {
+    color: #000000; /* Ubah warna teks menjadi hitam/gelap agar kontras dengan latar belakang gambar */
+    /* Hilangkan border-bottom agar tidak mengganggu gambar, atau ubah menjadi solid */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
 </style>
