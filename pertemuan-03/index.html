@@ -188,7 +188,49 @@ label {
 
 <style>
 
-    
+    /* Styling untuk keseluruhan halaman web (opsional, untuk melihat efek pemusatan) */
+body {
+    background-color: #f4f4f4; /* Latar belakang abu-abu muda */
+    font-family: Arial, sans-serif;
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    justify-content: center; /* Memusatkan item secara horizontal */
+    align-items: center; /* Memusatkan item secara vertikal (jika body memiliki tinggi) */
+    min-height: 100vh; /* Membuat body setidaknya setinggi viewport */
+    margin: 0;
+}
+
+/* Styling untuk tag <form> */
+form {
+    /* Batasi lebar formulir agar tidak terlalu melebar */
+    max-width: 450px;
+    width: 90%; /* Mengambil 90% lebar layar, maksimal 450px */
+    /* Warna latar belakang formulir */
+    background-color: #ffffff;
+    /* Padding di dalam formulir */
+    padding: 30px;
+    /* Sudut membulat */
+    border-radius: 8px;
+    /* Bayangan untuk efek kedalaman */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Mengatur tata letak agar input dan label tersusun rapi */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling untuk Label */
+label {
+    /* Margin di atas label untuk pemisah */
+    margin-top: 15px;
+    /* Membuat label tebal */
+    font-weight: bold;
+    /* Warna label */
+    color: #333;
+    /* Pastikan label sejajar */
+    display: block;
+    /* Ukuran font */
+    font-size: 14px;
+}
+
 /* Styling untuk Input Teks, Email, dan Textarea */
 input[type="text"],
 input[type="email"],
