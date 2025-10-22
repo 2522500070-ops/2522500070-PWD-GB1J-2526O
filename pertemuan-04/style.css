@@ -56,6 +56,13 @@
             text-align: justify;
         }
 
+        footer {
+            background: #a1dab2;
+            color: #eaeaea;
+            text-align: center;
+            padding: 10px;
+        }
+
         #about, 
         #contact {
             background-color: #a1dab2;
