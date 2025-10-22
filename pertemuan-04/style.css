@@ -73,12 +73,21 @@
             outline: 2px solid #fff;
             outline-offset: 2px;
             border-radius: 6px;
-            background-color: rgba(225, 255, 255, o.15);
+            background-color: rgba(255, 255, 255, o.15);
         }
 
         header li a:active {
             background-color: #4e9965;
             transform: translateY(1px);
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 16px;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
         }
 
         #about, 
