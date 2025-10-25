@@ -214,6 +214,14 @@ footer {
         top: 8px;
     }
 
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #4e9965;
+        width: 100%;
+        padding: 5px 0;
+    }
+
     header {
         padding: 16px;
         position: sticky;
