@@ -205,15 +205,15 @@ footer {
     color: #fff;
     font-size: 28px;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 9999;
+    position: absolute;
+    left: 16px;
+    top: 8px;
 }
 
 @media (max-width: 600px) {
     .menu-toggle {
         display: block;
-        position: absolute;
-        left: 16px;
-        top: 8px;
     }
 
     nav {
