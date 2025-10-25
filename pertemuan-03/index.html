@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Judul Halaman</title>
     <style>
-        #about, 
+        #about,
         #contact {
             background-color: #a1dab2;
             border-radius: 10px;
@@ -114,22 +114,23 @@
             background-color: #cccccc;
             transform: translateY(-1px);
         }
-        
-    #contact {
-      background-image: url('https___s-media-cache-ak0_pinimg.com_originals_e0_5a_70_e05a70b23f36987ff395063a1e193db7.gif');
-      background-size: cover;
-      background-position: center;
-      border-radius: 10px;
-      padding: 20px;
-      max-width: 700px;
-      margin: 20px auto;
-      color: white;
-      position: relative;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
+
+        #contact {
+            background-image: url('https___s-media-cache-ak0_pinimg.com_originals_e0_5a_70_e05a70b23f36987ff395063a1e193db7.gif');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            color: white;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
 
         @media (max-width: 600px) {
-            #about p, 
+
+            #about p,
             #contact label {
                 flex-direction: column;
                 align-items: flex-start;
@@ -148,7 +149,7 @@
                 width: 100%;
             }
         }
-</style>
+    </style>
 </head>
 
 <body>
@@ -179,19 +180,22 @@
             <p><strong>Nama Orang Tua:</strong> Bapak Heru Triwibowo dan Ibu Nurbaiti</p>
             <p><strong>Nama Kakak:</strong> Isnaini, Muhamad Kholid Arroyan, Al Anshori, dan Nunung Rifka Nurfalah</p>
             <p><strong>Nama Adek:</strong> Saya lah adeknya &#128516;</p>
-           
+
         </section>
         <section id="contact">
             <h2>Kontak Saya</h2>
             <form action="" method="get">
                 <label for="txtNama"><span>Nama:</span>
-                <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+                    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required
+                        autocomplete="name">
                 </label>
                 <label for="txtEmail"><span>Email:</span>
-                <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required
+                        autocomplete="email">
                 </label>
                 <label for="txtPesan"><span>Pesan:</span>
-                <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+                    <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..."
+                        required></textarea>
                 </label>
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
