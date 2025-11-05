@@ -13,4 +13,4 @@ Hari ini, Kamis 23 Oktober 2025, saya mempelajari:
   <li>styling nav class active</li>
   <li>menambah file script.js</li>
   <li>even klik pada tombol hamburger</li>
-<ol>
+</ol>
