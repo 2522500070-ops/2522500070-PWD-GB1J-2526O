@@ -141,7 +141,7 @@
             font-size: 24px;
             font-weight: bold;
             border-bottom: 2px solid #000;
-            display: inline-block;
+            padding-bottom: 5px;
             margin-bottom: 20px;
         }
         .baris {
