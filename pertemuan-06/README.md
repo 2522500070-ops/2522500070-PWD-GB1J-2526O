@@ -12,4 +12,5 @@ Hari ini, Kamis 30 Oktober 2025, saya mempelajari:
   <li>Latihan tipe data</li>
   <li>Latihan komentar/remark</li>
   <li>Latihan operator dasar</li>
+  <li>Latihan operator pembanding</li>
 </ol>
