@@ -33,19 +33,29 @@
 
         <section id="about">
             <?php
-                $nim = 2522500070;
+                $nim = "2522500070";
+                $namalengkap = "Andin Alamanda Ningtyas";
+                $tempatlahir = "Pangkalpinang";
+                $tanggallahir = "22 Mei 2007";
+                $hobby = "Nonton film, berinteraksi, dan mempelajari hal baru";
+                $pasangaan = "Tidak ada";
+                $pekerjaan = "Belum ada";
+                $namaorangtua = "Bapak Heru Triwibowo dan Ibu Nurbaiti";
+                $namakakak = "Isnaini, Muhamad Kholid Arroyan, Al Anshori, dan Nunung Rifka Nurfalah";
+                $namaadek = "Saya lah adeknya";
+
             ?>
             <h2>Tentang Saya</h2>
             <p><strong>NIM:</strong> <?php echo $nim ?></p>
-            <p><strong>Nama Lengkap:</strong> Andin Alamanda Ningtyas &#9729;</p>
-            <p><strong>Tempat Lahir:</strong> Pangkalpinang</p>
-            <p><strong>Tanggal Lahir:</strong> 22 Mei 2007</p>
-            <p><strong>Hobby:</strong> Nonton film, berinteraksi, dan mempelajari hal baru &#10052;</p>
-            <p><strong>Pasangan:</strong> Tidak ada</p>
-            <p><strong>Pekerjaan:</strong> Belum ada</p>
-            <p><strong>Nama Orang Tua:</strong> Bapak Heru Triwibowo dan Ibu Nurbaiti</p>
-            <p><strong>Nama Kakak:</strong> Isnaini, Muhamad Kholid Arroyan, Al Anshori, dan Nunung Rifka Nurfalah</p>
-            <p><strong>Nama Adek:</strong> Saya lah adeknya &#128516;</p>
+            <p><strong>Nama Lengkap:</strong> <?php echo $namalengkap ?> &#9729;</p>
+            <p><strong>Tempat Lahir:</strong> <?php echo $tempatlahir ?></p>
+            <p><strong>Tanggal Lahir:</strong> <?php echo $tanggallahir ?></p>
+            <p><strong>Hobby:</strong> <?php echo $hobby ?> &#10052;</p>
+            <p><strong>Pasangan:</strong> <?php echo $pasangaan ?></p>
+            <p><strong>Pekerjaan:</strong> <?php echo $pekerjaan ?></p>
+            <p><strong>Nama Orang Tua:</strong> <?php echo $namaorangtua ?></p>
+            <p><strong>Nama Kakak:</strong> <?php echo $namakakak ?></p>
+            <p><strong>Nama Adek:</strong> <?php echo $namaadek ?> &#128516;</p>
 
         </section>
         <section id="contact">
