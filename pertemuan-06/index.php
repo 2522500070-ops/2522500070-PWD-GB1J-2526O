@@ -66,7 +66,7 @@ $nilaiTugas1 = 60;
 $nilaiUTS1 = 80;
 $nilaiUAS1 = 70;
 
-$namaMatkul2 = "Pengnatar Basis Data";
+$namaMatkul2 = "Pengantar Basis Data";
 $sksMatkul2 = 2;
 $nilaiHadir2 = 70;
 $nilaiTugas2 = 50;
