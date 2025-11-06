@@ -13,4 +13,5 @@ Hari ini, Kamis 30 Oktober 2025, saya mempelajari:
   <li>Latihan komentar/remark</li>
   <li>Latihan operator dasar</li>
   <li>Latihan operator pembanding</li>
+  <li>Latihan struktur kontrol percabangan</li>
 </ol>
