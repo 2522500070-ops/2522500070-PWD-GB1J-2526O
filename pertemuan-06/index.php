@@ -144,27 +144,35 @@
             padding-bottom: 5px;
             margin-bottom: 20px;
         }
-        .baris {
-            display: flex;
-            margin: 4px 0;
-        }
-        .label {
-            width: 250px;
-            text-align: right;
-            font-weight: bold;
-        }
-        .nilai {
-            margin-left: 10px;
-        }
-        .matkul {
-            margin-bottom: 25px;
-        }
-        .total {
-            border-top: 2px solid #000;
-            margin-top: 30px;
-            padding-top: 15px;
-        }
-    </style>
+
+        .table-nilai {
+       width: 100%;
+       border-collapse: collapse;
+}
+
+.table-nilai td {
+    padding: 3px 10px;
+    vertical-align: top;
+}
+
+.table-nilai tr td:first-child {
+    text-align: right;
+    font-weight: bold;
+    width: 220px;
+}
+
+.matkul {
+    border-bottom: 2px solid #aaa;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.total {
+    margin-top: 20px;
+    border-top: 2px solid #000;
+    padding-top: 10px;
+}
+</style>
 
     <?php
     for ($i = 1; $i <= 5; $i++) {
