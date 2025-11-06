@@ -40,7 +40,7 @@
             <p><strong>Nama Lengkap:</strong> Andin Alamanda Ningtyas &#9729;</p>
             <p><strong>Tempat Lahir:</strong> Pangkalpinang</p>
             <p><strong>Tanggal Lahir:</strong> 22 Mei 2007</p>
-            <p><strong>Hobby:</strong> Nonton film dan mempelajari hal baru &#10052;</p>
+            <p><strong>Hobby:</strong> Nonton film, berinteraksi, dan mempelajari hal baru &#10052;</p>
             <p><strong>Pasangan:</strong> Tidak ada</p>
             <p><strong>Pekerjaan:</strong> Belum ada</p>
             <p><strong>Nama Orang Tua:</strong> Bapak Heru Triwibowo dan Ibu Nurbaiti</p>

@@ -5,6 +5,7 @@
 </head>
 <body>
     <h1><?php echo "Halo, Dunia PHP!"; ?></h1>
+    <h2><?php echo "Selamat datang di PHP, Saya Andin!”; ?></h2>
 </body>
 </html>
 
@@ -60,4 +61,16 @@ var_dump($mahasiswa);
 echo "\nNULL:\n";
 var_dump($nilai_akhir);
 echo "</pre>";
+?>
+
+<?php
+define("KAMPUS", "ISB Atma Luhur");
+const ANGKATAN = 2025;
+define("DOSEN_PENGAMPU", "Yohanes Setiawan Japriadi, M.Kom");
+const MATAKULIAH = "Pemrograman Web Dasar";
+
+echo "Kampus: " . KAMPUS . "<br>";
+echo "Angkatan: " . ANGKATAN . "<br>";
+echo "Dosen Pengampu: " . DOSEN_PENGAMPU . "<br>";
+echo "Mata Kuliah: " . MATAKULIAH;
 ?>
