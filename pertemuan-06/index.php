@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,13 +26,17 @@
             <h2>Selamat Datang</h2>
             <p>Ini contoh paragraf HTML.</p>
             <?php
-            echo "Halo Dunia!";
+            echo "Halo Dunia!<br>";
+            echo "Nama Saya Andin";
             ?>
         </section>
-        
+
         <section id="about">
+            <?php
+                $nim = 2522500070;
+            ?>
             <h2>Tentang Saya</h2>
-            <p><strong>NIM:</strong> 2522500070</p>
+            <p><strong>NIM:</strong> <?php echo $nim ?></p>
             <p><strong>Nama Lengkap:</strong> Andin Alamanda Ningtyas &#9729;</p>
             <p><strong>Tempat Lahir:</strong> Pangkalpinang</p>
             <p><strong>Tanggal Lahir:</strong> 22 Mei 2007</p>
