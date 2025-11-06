@@ -132,7 +132,7 @@
 
     <style>
         #ipk {
-            font-family: 'Poppins', sans-serif;
+            font-family: Arial, sans-serif;
             color: #000;
             background-color: #b2d8b2;
             padding: 20px 40px;
