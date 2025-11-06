@@ -145,58 +145,42 @@
             margin-bottom: 20px;
         }
 
-        .table-nilai {
-       width: 100%;
-       border-collapse: collapse;
+ #ipk pre {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
 }
-
-.table-nilai td {
-    padding: 3px 10px;
-    vertical-align: top;
-}
-
-.table-nilai tr td:first-child {
-    text-align: right;
-    font-weight: bold;
-    width: 220px;
-}
-
-.matkul {
-    border-bottom: 2px solid #aaa;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-}
-
-.total {
-    margin-top: 20px;
-    border-top: 2px solid #000;
-    padding-top: 10px;
+#ipk hr {
+    border: none;
+    border-top: 2px solid #aaa;
+    margin: 15px 0;
 }
 </style>
 
-    <?php
-    for ($i = 1; $i <= 5; $i++) {
-        echo "<div class='matkul'>";
-        echo "<div class='baris'><div class='label'>Nama Matakuliah ke-$i :</div><div class='nilai'>${'namaMatkul'.$i}</div></div>";
-        echo "<div class='baris'><div class='label'>SKS :</div><div class='nilai'>${'sksMatkul'.$i}</div></div>";
-        echo "<div class='baris'><div class='label'>Kehadiran :</div><div class='nilai'>${'nilaiHadir'.$i}</div></div>";
-        echo "<div class='baris'><div class='label'>Tugas :</div><div class='nilai'>${'nilaiTugas'.$i}</div></div>";
-        echo "<div class='baris'><div class='label'>UTS :</div><div class='nilai'>${'nilaiUTS'.$i}</div></div>";
-        echo "<div class='baris'><div class='label'>UAS :</div><div class='nilai'>${'nilaiUAS'.$i}</div></div>";
-        echo "<div class='baris'><div class='label'>Nilai Akhir :</div><div class='nilai'>".number_format(${"nilaiAkhir$i"}, 2)."</div></div>";
-        echo "<div class='baris'><div class='label'>Grade :</div><div class='nilai'>${'grade'.$i}</div></div>";
-        echo "<div class='baris'><div class='label'>Angka Mutu :</div><div class='nilai'>".number_format(${"mutu$i"}, 2)."</div></div>";
-        echo "<div class='baris'><div class='label'>Bobot :</div><div class='nilai'>".number_format(${"bobot$i"}, 2)."</div></div>";
-        echo "<div class='baris'><div class='label'>Status :</div><div class='nilai'>${'status'.$i}</div></div>";
-        echo "</div>";
-    }
+<?php
+for ($i = 1; $i <= 5; $i++) {
+    echo "<pre>";
+    echo "Nama Matakuliah ke-$i : ${'namaMatkul'.$i}\n";
+    echo "SKS                 : ${'sksMatkul'.$i}\n";
+    echo "Kehadiran           : ${'nilaiHadir'.$i}\n";
+    echo "Tugas               : ${'nilaiTugas'.$i}\n";
+    echo "UTS                 : ${'nilaiUTS'.$i}\n";
+    echo "UAS                 : ${'nilaiUAS'.$i}\n";
+    echo "Nilai Akhir         : ".number_format(${"nilaiAkhir$i"}, 2)."\n";
+    echo "Grade               : ${'grade'.$i}\n";
+    echo "Angka Mutu          : ".number_format(${"mutu$i"}, 2)."\n";
+    echo "Bobot               : ".number_format(${"bobot$i"}, 2)."\n";
+    echo "Status              : ${'status'.$i}\n";
+    echo "</pre><hr>";
+}
 
-    echo "<div class='total'>";
-    echo "<div class='baris'><div class='label'>Total Bobot :</div><div class='nilai'>".number_format($totalBobot, 2)."</div></div>";
-    echo "<div class='baris'><div class='label'>Total SKS :</div><div class='nilai'>$totalSKS</div></div>";
-    echo "<div class='baris'><div class='label'>IPK :</div><div class='nilai'>".number_format($IPK, 2)."</div></div>";
-    echo "</div>";
-    ?>
+echo "<pre>";
+echo "Total Bobot         : ".number_format($totalBobot, 2)."\n";
+echo "Total SKS            : $totalSKS\n";
+echo "IPK                  : ".number_format($IPK, 2)."\n";
+echo "</pre>";
+?>
+</section>
 
         </section>
         <section id="contact">
