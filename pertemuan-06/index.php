@@ -34,28 +34,28 @@
         <section id="about">
             <?php
                 $nim = "2522500070";
-                $namalengkap = "Andin Alamanda Ningtyas";
+                $namalengkap = "Andin Alamanda Ningtyas &#9729;";
                 $tempatlahir = "Pangkalpinang";
                 $tanggallahir = "22 Mei 2007";
-                $hobby = "Nonton film, berinteraksi, dan mempelajari hal baru";
+                $hobby = "Nonton film, berinteraksi, dan mempelajari hal baru &#10052;";
                 $pasangaan = "Tidak ada";
                 $pekerjaan = "Belum ada";
                 $namaorangtua = "Bapak Heru Triwibowo dan Ibu Nurbaiti";
                 $namakakak = "Isnaini, Muhamad Kholid Arroyan, Al Anshori, dan Nunung Rifka Nurfalah";
-                $namaadek = "Saya lah adeknya";
+                $namaadek = "Saya lah adeknya  &#128516;";
 
             ?>
             <h2>Tentang Saya</h2>
             <p><strong>NIM:</strong> <?php echo $nim ?></p>
-            <p><strong>Nama Lengkap:</strong> <?php echo $namalengkap ?> &#9729;</p>
+            <p><strong>Nama Lengkap:</strong> <?php echo $namalengkap ?></p>
             <p><strong>Tempat Lahir:</strong> <?php echo $tempatlahir ?></p>
             <p><strong>Tanggal Lahir:</strong> <?php echo $tanggallahir ?></p>
-            <p><strong>Hobby:</strong> <?php echo $hobby ?> &#10052;</p>
+            <p><strong>Hobby:</strong> <?php echo $hobby ?></p>
             <p><strong>Pasangan:</strong> <?php echo $pasangaan ?></p>
             <p><strong>Pekerjaan:</strong> <?php echo $pekerjaan ?></p>
             <p><strong>Nama Orang Tua:</strong> <?php echo $namaorangtua ?></p>
             <p><strong>Nama Kakak:</strong> <?php echo $namakakak ?></p>
-            <p><strong>Nama Adek:</strong> <?php echo $namaadek ?> &#128516;</p>
+            <p><strong>Nama Adek:</strong> <?php echo $namaadek ?></p>
 
         </section>
         <section id="contact">
