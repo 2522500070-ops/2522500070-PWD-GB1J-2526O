@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+session_start();
+$sesemail = $_SESSION["txtEmail"] ?? "";
+$sespesan = $_SESSION["txtPesan"] ?? "";
+$sesnim = $_SESSION["sesnim"] ?? "";
+$sesnama = $_SESSION["txtnamalengkap"] ?? "";  
+$sestempatlahir = $_SESSION["txttempatlahir"] ?? "";
+$sestanggallahir = $_SESSION["txttanggallahir"] ?? "";
+$seshobi = $_SESSION["txthobi"] ?? "";
+$sespasangan = $_SESSION["txtpasangan"] ?? "";
+$sespekerjaan = $_SESSION["txtpekerjaan"] ?? "";
+$sesnamaortu = $_SESSION["txtnamaortu"] ?? "";
+$sesnamakakak = $_SESSION["txtnamakakak"] ?? "";
+$sesnamaadik = $_SESSION["txtnamaadik"] ?? "";
+?>
 
 <head>
   <meta charset="UTF-8">
@@ -19,6 +34,7 @@
         <li><a href="#home">Beranda</a></li>
         <li><a href="#about">Tentang</a></li>
         <li><a href="#contact">Kontak</a></li>
+      
       </ul>
     </nav>
   </header>
@@ -35,38 +51,38 @@
 
     <section id="about">
       <?php
-      $nim = 2511500010;
-      $NIM = '0344300002';
-      $nama = "Say'yid Abdullah";
-      $Nama = 'Al\'kautar Benyamin';
+          $nim = "2522500070";
+          $nama_Lengkap = "Andin Alamanda Ningtyas &#9729;";
+          $tempat_Lahir = "Pangkalpinang";
+          $tanggal_Lahir = "22 Mei 2007";
+          $hobi = "Nonton film, berinteraksi, dan mempelajari hal baru &#10052;";
+          $pasangan = "Tidak ada";
+          $Pekerjaan = "Belum ada";
+          $nama_orang_tua ="Bapak Heru Triwibowo dan Ibu Nurbaiti";
+          $nama_kakak = "Isnaini, Muhamad Kholid Arroyan, Al Anshori, dan Nunung Rifka Nurfalah";
+          $nama_adik = "Saya lah adeknya &#128516;";
       ?>
+
       <h2>Tentang Saya</h2>
-      <p><strong>NIM:</strong>
-        <?php
-        echo $NIM;
-        ?>
-      </p>
-      <p><strong>Nama Lengkap:</strong>
-        <?php
-        echo $Nama;
-        ?> &#128526;
-      </p>
-      <p><strong>Tempat Lahir:</strong> Pangkalpinang</p>
-      <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
-      <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
-      <p><strong>Pasangan:</strong> Belum ada &hearts;</p>
-      <p><strong>Pekerjaan:</strong> Dosen di ISB Atma Luhur &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> Bapak Setiawan dan Ibu Maria</p>
-      <p><strong>Nama Kakak:</strong> Antonius Setiawan</p>
-      <p><strong>Nama Adik:</strong> Christina Setiawan</p>
+      <p><strong>NIM:</strong><?php echo $sesnim?> </p>
+      <p><strong>Nama Lengkap:</strong><?php echo $sesnama?></p>
+      <p><strong>Tempat Lahir:</strong><?php echo $sestempatlahir?></p>
+      <p><strong>Tanggal Lahir:</strong> <?php echo $sestanggallahir?></p>
+      <p><strong>Hobi:</strong><?php echo $seshobi?></p>
+      <p><strong>Pasangan:</strong> <?php echo $sespasangan ?></p>
+      <p><strong>Pekerjaan:</strong><?php echo $sespekerjaan?></p>
+      <p><strong>Nama Orang Tua:</strong> <?php echo $sesnamaortu?></p>
+      <p><strong>Nama Kakak:</strong> <?php echo $sesnamakakak?></p>
+      <p><strong>Nama Adik:</strong> <?php echo $sesnamaadik?></p>
     </section>
+
 
     <section id="contact">
       <h2>Kontak Kami</h2>
-      <form action="" method="GET">
+      <form action="  " method="POST">
 
-        <label for="txtNama"><span>Nama:</span>
-          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        <label for="txtnama"><span>Nama:</span>
+          <input type="text" id="txtnama" name="txtnama" placeholder="Masukkan nama" required autocomplete="name">
         </label>
 
         <label for="txtEmail"><span>Email:</span>
@@ -82,14 +98,73 @@
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
+</section>
+
+
+
+
+  <section id="contact">
+      <br><h2>Ubah di sini</h2></br>
+      <form action="ulangan.php" method="POST">
+
+        <label for="txtnim"><span>NIM:</span>
+          <input type="Nim" id="txtnim" name="txtnim" placeholder="ubah di sini........." required autocomplete="nim">
+        </label>
+
+        <label for="txtnamalengkap"><span>Nama Lengkap:</span>
+          <input type="Nama" id="txtnamalengkap" name="txtnamalengkap" placeholder="ubah di sini........." required autocomplete="nama">
+        </label>
+
+        <label for="txttempatlahir"><span>Tempat Lahir:</span>
+          <input type="Tempat lahir" id="txttempatlahir" name="txttempatlahir" placeholder="ubah di sini........." required autocomplete="email">
+        </label>
+
+        <label for="txttanggallahir"><span>Tanggal Lahir:</span>
+          <input type="Tanggal lahir" id="txttanggallahir" name="txttanggallahir" placeholder="ubah di sini........." required autocomplete="email">
+        </label>
+
+        <label for="txthobi"><span>Hobi:</span>
+          <input type="hobi" id="txthobi" name="txthobi" placeholder="ubah di sini........." required autocomplete="email">
+        </label>
+
+        <label for="txtpasangan"><span>Pasangan:</span>
+          <input type="pasangan" id="txtpasangan" name="txtpasangan" placeholder="ubah di sini........." required autocomplete="email">
+        </label>
+
+        
+        <label for="txtpekerjaan"><span>Pekerjaan:</span>
+          <input type="pekerjaan" id="txtpekerjaan" name="txtpekerjaan" placeholder="ubah di sini........." required autocomplete="email">
+        </label>
+
+        <label for="txtnamaortu"><span>Nama Orang Tua:</span>
+          <input type="nama orang tua" id="txtnamaortu" name="txtnamaortu" placeholder="ubah di sini........." required autocomplete="email">
+        </label>
+
+        <label for="txtnamakakak"><span>Nama Kakak:</span>
+          <input type="nama kakak" id="txtnamakakak" name="txtnamakakak" placeholder="ubah di sini........." required autocomplete="email">
+        </label>
+
+        <label for="txtnamaadik"><span>Nama Adik:</span>
+          <input type="nama adik" id="txtnamadik" name="txtnamaadik" placeholder="ubah di sini........." required autocomplete="email">
+        </label>
+
+  
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
+
+
+      
+
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Yohanes Setiawan Japriadi [0344300002]</p>
+    <p><marquee>&copy; 2025 Andin Alamanda Ningtyas 2522500070</marquee></p>
   </footer>
 
   <script src="script.js"></script>
 </body>
-
+  
 </html>
