@@ -1,12 +1,14 @@
 # pertemuan-08
 
-silahkan sesuaikan dengan milik kalian masing-masing:<br><br>
 Hari ini, Rabu 12.NOV.2025, saya:<br>
-NIM: 0344300002<br>
-Nama: Yohanes Setiawan Japriadi<br>
-Kelompok: TI1A<br>
+NIM: 2522500070<br>
+Nama: Andin Alamanda Ningtyas<br>
+Kelompok: GB1J<br>
 <br>
 Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
-  <li>silahkan diisi sesuai proses pengerjaan kalian masing-masing</li>
+  <li>mengekstrak bahan uts ke pertemuan-08</li>
+  <li>menambahkan section baru dgn judul biodata sederhana mahasiswa</li>
+  <li>buat input pada form biodata sederhana mahasiswa</li>
+  <li>buat codingan di file proses.php</li>
 </ol>

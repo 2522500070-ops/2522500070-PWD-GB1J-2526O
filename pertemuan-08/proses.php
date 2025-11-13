@@ -11,4 +11,5 @@ $_SESSION["ortu"] = $_POST["ortu"];
 $_SESSION["kakak"] = $_POST["kakak"];
 $_SESSION["adik"] = $_POST["adik"];
 header("location: index.php");
+exit();
 ?>
