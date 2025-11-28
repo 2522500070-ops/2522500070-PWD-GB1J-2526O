@@ -11,5 +11,7 @@
   <li>tangkap session dari file proses selesai</li>
   <li>echo session ke nilai label section contact</li>
   <li>echo session ke nilai label section contact selesai</li>
-  <li>modif proses.php menjadi bentuk array associative</li>
+  <li>mengubah semua POST menjadi array associative $arrBiodata</li>
+  <li>mengubah variabel SESSION menjadi array associative</li>
+  <li>mengarahkan kembali ke index pada section#about</li>
 </ol>
