@@ -19,4 +19,6 @@
   <li>menghapus baris kode HTML di <section id="about"> karena sudah digantikan dengan loop foreach</li>
   <li>menambahkan file baru dengan nama fungsi.php</li>
   <li>menambahkan fungsi <code>bersihkan() dan fungsi <code>tidakKosong()</li>
+  <li>menambahkan fungsi <code>formatTanggal()</li>
+  <li>menambahkan kode pada fungsi.php untuk merender hasil atau output biodata</li>
 </ol>
