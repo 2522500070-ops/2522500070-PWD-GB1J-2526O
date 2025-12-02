@@ -18,4 +18,5 @@
   <li>menambahkan kode loop foreach di index.php untuk menampilkan array</li>
   <li>menghapus baris kode HTML di <section id="about"> karena sudah digantikan dengan loop foreach</li>
   <li>menambahkan file baru dengan nama fungsi.php</li>
+  <li>menambahkan fungsi <code>bersihkan() dan fungsi <code>tidakKosong()</li>
 </ol>
