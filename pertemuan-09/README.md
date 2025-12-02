@@ -21,4 +21,6 @@
   <li>menambahkan fungsi <code>bersihkan() dan fungsi <code>tidakKosong()</li>
   <li>menambahkan fungsi <code>formatTanggal()</li>
   <li>menambahkan kode pada fungsi.php untuk merender hasil atau output biodata</li>
+  <li>mengganti kode pada index.php dengan fungsi tampilkanBiodata()</li>
+  <li>menambahkan kode pada index.php untuk menyertakan file fungsi.php dengan kode require_once</li>
 </ol>
