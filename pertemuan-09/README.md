@@ -14,4 +14,8 @@
   <li>mengubah semua POST menjadi array associative $arrBiodata</li>
   <li>mengubah variabel SESSION menjadi array associative</li>
   <li>mengarahkan kembali ke index pada section#about</li>
+  <li>menambahkan konfigurasi field di index.html</li>
+  <li>menambahkan kode loop foreach di index.php untuk menampilkan array</li>
+  <li>menghapus baris kode HTML di <section id="about"> karena sudah digantikan dengan loop foreach</li>
+  <li>menambahkan file baru dengan nama fungsi.php</li>
 </ol>
