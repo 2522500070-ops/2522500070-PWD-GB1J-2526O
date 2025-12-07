@@ -143,9 +143,10 @@ require_once __DIR__ . '/fungsi.php';
       <br>
       <hr>
       <h2>Yang menghubungi kami</h2>
-      <?= tampilkanBiodata($fieldContact, $contact) ?>
+      <?php include 'read_inc.php'; ?>
     </section>
   </main>
+
 
   <footer>
     <p>&copy; 2025 Yohanes Setiawan Japriadi [0344300002]</p>
