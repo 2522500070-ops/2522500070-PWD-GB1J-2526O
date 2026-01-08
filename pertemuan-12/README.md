@@ -9,8 +9,9 @@ Hari ini, Kamis 18 Desember 2025, saya mempelajari:
 <li>Membuat link edit yang aman, yaitu cid di-casting saat output (HTML)</li>
 <li>Menambahkan penampil flash sukses maupun flash error menggunakan session pada read.php</li>
 <li>Membuat file baru dengan nama edit.php di folder pertemuan-12 untuk menampilkan form dengan data lama yang
-dibaca berdasarkan cid (prefill form)</li>
-<li></li>
+dibaca berdasarkan cid (prefill form) dan mengetik skrip code</li>
+<li>Membuat file baru dengan nama proses_update.php di dalam folder pertemuan-12 untuk menyimpan perubahan
+menggunakan query UPDATE dan prepared statement dan mengetik skrip code</li>
 <li></li>
 <li></li>
 <li></li>
