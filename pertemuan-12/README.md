@@ -12,7 +12,5 @@ Hari ini, Kamis 18 Desember 2025, saya mempelajari:
 dibaca berdasarkan cid (prefill form) dan mengetik skrip code</li>
 <li>Membuat file baru dengan nama proses_update.php di dalam folder pertemuan-12 untuk menyimpan perubahan
 menggunakan query UPDATE dan prepared statement dan mengetik skrip code</li>
-<li></li>
-<li></li>
-<li></li>
+<li>Ujicoba akses url read.php, edit.php, dan proses_update.php</li>
 </ol>

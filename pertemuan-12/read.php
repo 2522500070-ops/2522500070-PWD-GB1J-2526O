@@ -13,7 +13,6 @@ if (!$q) {
 <?php
 $flash_sukses = $_SESSION['flash_sukses'] ?? ''; // jika query sukses
 $flash_error  = $_SESSION['flash_error'] ?? '';  // jika ada error
-
 // bersihkan session ini
 unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
 ?>
@@ -42,19 +41,16 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
         <th>Pesan</th>
         <th>Created At</th>
     </tr>
-
     <?php $i = 1; ?>
     <?php while ($row = mysqli_fetch_assoc($q)): ?>
         <tr>
             <td><?= $i++; ?></td>
-            <td>
-                <a href="edit.php?cid=<?= (int)$row['cid']; ?>">Edit</a>
-            </td>
+            <td><a href="edit.php?cid=<?= (int)$row['cid']; ?>">Edit</a></td>
             <td><?= $row['cid']; ?></td>
             <td><?= htmlspecialchars($row['cnama']); ?></td>
             <td><?= htmlspecialchars($row['cemail']); ?></td>
             <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>
-            <td><?= formatTanggal(htmlspecialchars($row['dcreated_at'])); ?></td>
+            <td><?= formatTanggal(htmlspecialchars($row['created_at'])); ?></td>
         </tr>
     <?php endwhile; ?>
 </table>

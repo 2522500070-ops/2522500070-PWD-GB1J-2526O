@@ -3,21 +3,13 @@ session_start();
 require __DIR__ . '/koneksi.php';
 require_once __DIR__ . '/fungsi.php';
 
-/*
-| --------------------------------------------------
-| Cek method form, hanya izinkan POST
-| --------------------------------------------------
-*/
+#Cek method form, hanya izinkan POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
     redirect_ke('read.php');
 }
 
-/*
-| --------------------------------------------------
-| Validasi CID (wajib angka & > 0)
-| --------------------------------------------------
-*/
+#Validasi CID (wajib angka & > 0)
 $cid = filter_input(INPUT_POST, 'cid', FILTER_VALIDATE_INT, [
     'options' => ['min_range' => 1]
 ]);
@@ -27,21 +19,13 @@ if (!$cid) {
     redirect_ke('edit.php?cid=' . (int)$cid);
 }
 
-/*
-| --------------------------------------------------
-| Ambil & bersihkan input
-| --------------------------------------------------
-*/
+#Ambil & bersihkan input
 $nama    = bersihkan($_POST['txtNamaEd'] ?? '');
 $email   = bersihkan($_POST['txtEmailEd'] ?? '');
 $pesan   = bersihkan($_POST['txtPesanEd'] ?? '');
 $captcha = bersihkan($_POST['txtCaptcha'] ?? '');
 
-/*
-| --------------------------------------------------
-| Validasi sederhana
-| --------------------------------------------------
-*/
+#Validasi sederhana
 $errors = [];
 
 if ($nama === '') {
@@ -75,9 +59,8 @@ if ($captcha !== "6") {
 }
 
 /*
-| --------------------------------------------------
-| Jika ada error → simpan old value & redirect (PRG)
-| --------------------------------------------------
+Kondisi di bawah ini hanya dikerjakan jika ada error,
+simpan nilai lama dan pesan error, lalu redirect (konsep RPG)
 */
 if (!empty($errors)) {
     $_SESSION['old'] = [
@@ -91,32 +74,27 @@ if (!empty($errors)) {
 }
 
 /*
-| --------------------------------------------------
-| Prepared statement (anti SQL Injection)
-| --------------------------------------------------
+Prepared statement anti SQL Injection.
+Menyiapkan query UPDATE dengan prepared statement 
+(WAJIB WHERE cid = ?)
 */
-$stmt = mysqli_prepare(
-    $conn,
-    "UPDATE tbl_tamu 
-     SET cnama = ?, cemail = ?, cpesan = ?
-     WHERE cid = ?"
-);
-
+$stmt = mysqli_prepare($conn, "UPDATE tbl_tamu 
+                              SET cnama = ?, cemail = ?, cpesan = ?
+                             WHERE cid = ?");
 if (!$stmt) {
+  #Jika gagal prepare, kirim pesan error (tanpa detail sensitif)
     $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
     redirect_ke('edit.php?cid=' . (int)$cid);
 }
 
-/*
-| --------------------------------------------------
-| Bind & eksekusi
-| --------------------------------------------------
-*/
+#Bind parameter dan eksekusi (s = string, i = integer)
 mysqli_stmt_bind_param($stmt, "sssi", $nama, $email, $pesan, $cid);
 
 if (mysqli_stmt_execute($stmt)) {
     unset($_SESSION['old']);
-
+/*
+Redirect balik ke read.php dan tampilkan info sukses.
+*/
     $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah diperbaharui.';
     redirect_ke('read.php');
 } else {
@@ -125,10 +103,10 @@ if (mysqli_stmt_execute($stmt)) {
         'email' => $email,
         'pesan' => $pesan
     ];
-
     $_SESSION['flash_error'] = 'Data gagal diperbaharui. Silakan coba lagi.';
     redirect_ke('edit.php?cid=' . (int)$cid);
 }
-
+#Tutup statement
 mysqli_stmt_close($stmt);
+
 redirect_ke('edit.php?cid=' . (int)$cid);
