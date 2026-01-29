@@ -40,7 +40,7 @@ require_once __DIR__ . '/fungsi.php';
 
     <section id="anggota">
       <h2>Data Anggota</h2>
-      <form action="proses_anggota.php" method="POST">
+      <form action="proses_simpan.php" method="POST">
 
         <label for="txtNoAng"><span>Nomor Anggota:</span>
           <input type="text" id="txtNoAng" name="txtNoAng" placeholder="Masukkan Nomor Anggota" required>

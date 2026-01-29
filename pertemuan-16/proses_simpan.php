@@ -1,27 +1,55 @@
 <?php
 include 'koneksi.php';
 
-$nim            = $_POST['nim'];
-$nama           = $_POST['nama_lengkap'];
-$tempat_lahir   = $_POST['tempat_lahir'];
-$tanggal_lahir  = $_POST['tanggal_lahir'];
-$hobi           = $_POST['hobi'];
-$pasangan       = $_POST['pasangan'];
-$pekerjaan      = $_POST['pekerjaan'];
-$nama_ortu      = $_POST['nama_ortu'];
-$nama_kakak     = $_POST['nama_kakak'];
-$nama_adik      = $_POST['nama_adik'];
+$nomor_anggota   = $_POST['nomor_anggota'];
+$nama_anggota    = $_POST['nama_anggota'];
+$jabatan_anggota = $_POST['jabatan_anggota'];
+$tanggal_jadi    = $_POST['tanggal_jadi'];
+$kemampuan       = $_POST['kemampuan'];
+$gaji            = $_POST['gaji'];
+$no_wa           = $_POST['no_wa'];
+$batalion        = $_POST['batalion'];
+$berat_badan     = $_POST['berat_badan'];
+$tinggi_badan    = $_POST['tinggi_badan'];
 
-$query = "INSERT INTO anggota 
-(NIM, Nama_Lengkap, Tempat_Lahir, Tanggal_Lahir, Hobi, Pasangan, Pekerjaan, Nama_Ortu, Nama_Kakak, Nama_Adik, create_at)
-VALUES
-('$nim','$nama','$tempat_lahir','$tanggal_lahir','$hobi','$pasangan','$pekerjaan','$nama_ortu','$nama_kakak','$nama_adik', NOW())";
+$query = mysqli_query($koneksi, " INSERT INTO anggota (
+        nomor_anggota,
+        nama_anggota,
+        jabatan_anggota,
+        tanggal_jadi,
+        kemampuan,
+        gaji,
+        no_wa,
+        batalion,
+        berat_badan,
+        tinggi_badan
+    ) VALUES (
+        '$nomor_anggota',
+        '$nama_anggota',
+        '$jabatan_anggota',
+        '$tanggal_jadi',
+        '$kemampuan',
+        '$gaji',
+        '$no_wa',
+        '$batalion',
+        '$berat_badan',
+        '$tinggi_badan'
+    )
+");
 
-$simpan = mysqli_query($koneksi, $query);
-
-if ($simpan) {
-    echo "Data berhasil disimpan";
+if ($query) {
+    echo "
+    <script>
+        alert('Data anggota berhasil disimpan');
+        window.location='index.php';
+    </script>
+    ";
 } else {
-    echo "Data gagal disimpan";
+    echo "
+    <script>
+        alert('Data gagal disimpan');
+        window.history.back();
+    </script>
+    ";
 }
 ?>
